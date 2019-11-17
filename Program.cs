@@ -19,9 +19,13 @@ namespace EnglishIdioms
             idioms.Add("Sheep", new List<string> { "Pulled", "the", "wool", "over", "his", "eyes" });
             idioms.Add("Lucifer", new List<string> { "Speak", "of", "the", "devil" });
 
+
+
             foreach (KeyValuePair<string, List<string>> idiom in idioms)
             {
-                Console.WriteLine(idiom);
+                string idi = string.Join(" ", idiom.Value);
+                Console.WriteLine($"{idiom.Key}: {idi}");
+
             }
 
         }
